@@ -1,0 +1,29 @@
+name: BDD Suite
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  bdd:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Run BDD suite
+        run: python scripts/run_bdd.py
+
+      - name: Record BDD run
+        uses: charmbracelet/vhs-action@v2
+        with:
+          tape: docs/vhs/bdd.tape
+
+      - name: Upload BDD recording
+        uses: actions/upload-artifact@v4
+        with:
+          name: bdd-gif
+          path: docs/assets/bdd.gif
+          if-no-files-found: error

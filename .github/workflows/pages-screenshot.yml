@@ -1,0 +1,44 @@
+name: Capture GitHub Pages Screenshot
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 9 * * 1'
+
+jobs:
+  capture:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install Playwright deps
+        run: npm install playwright@1.41.2
+
+      - name: Capture screenshot
+        run: node scripts/pages_screenshot.mjs
+        env:
+          PAGES_URL: https://realagiorganization.github.io/Feather/
+          SCREENSHOT_PATH: Images/github-pages-latest.png
+
+      - name: Upload artifact (latest screenshot)
+        uses: actions/upload-artifact@v4
+        with:
+          name: github-pages-latest
+          path: Images/github-pages-latest.png
+
+      - name: Commit updated screenshot
+        uses: EndBug/add-and-commit@v9
+        with:
+          add: Images/github-pages-latest.png
+          message: "chore: update pages screenshot"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

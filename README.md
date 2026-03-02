@@ -5,12 +5,33 @@
 [![GitHub License](https://img.shields.io/github/license/khcrysalis/feather?color=%23C96FAD)](https://github.com/khcrysalis/feather/blob/main/LICENSE)
 [![Sponsor Me](https://img.shields.io/static/v1?label=Sponsor&message=%E2%9D%A4&logo=GitHub&color=%23fe8e86)](https://github.com/sponsors/khcrysalis)
 [![Discord](https://img.shields.io/discord/1265361879992242196?style=flat&label=discord)](https://discord.gg/TYnUDJkG66)
+[![Create New Release](https://github.com/realagiorganization/Feather/actions/workflows/release.yml/badge.svg)](https://github.com/realagiorganization/Feather/actions/workflows/release.yml)
+[![Update Repository](https://github.com/realagiorganization/Feather/actions/workflows/update_repo.yml/badge.svg)](https://github.com/realagiorganization/Feather/actions/workflows/update_repo.yml)
+[![CI Build & Tests](https://github.com/realagiorganization/Feather/actions/workflows/ci.yml/badge.svg)](https://github.com/realagiorganization/Feather/actions/workflows/ci.yml)
+[![TestFlight Release](https://github.com/realagiorganization/Feather/actions/workflows/testflight.yml/badge.svg)](https://github.com/realagiorganization/Feather/actions/workflows/testflight.yml)
+[![Validate TestFlight](https://github.com/realagiorganization/Feather/actions/workflows/testflight-validate.yml/badge.svg)](https://github.com/realagiorganization/Feather/actions/workflows/testflight-validate.yml)
+[![BDD Suite](https://github.com/realagiorganization/Feather/actions/workflows/bdd.yml/badge.svg)](https://github.com/realagiorganization/Feather/actions/workflows/bdd.yml)
+[![Pages Screenshot](https://github.com/realagiorganization/Feather/actions/workflows/pages-screenshot.yml/badge.svg)](https://github.com/realagiorganization/Feather/actions/workflows/pages-screenshot.yml)
 
 This app allows you to install and manage applications contained in a single app, using certificate pairs and various installation techniques to allow apps to install to your device. This is an entirely stock application and uses built-in features to be able to do this!
 
 | <p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="Images/Image-dark.png"><source media="(prefers-color-scheme: light)" srcset="Images/Image-light.png"><img alt="Pointercrate-pocket." src="Images/Image-light.png"></picture></p> |
 |:-:|
 | Screenshot of Feather on iOS / iPadOS |
+
+## UI Testing
+
+![UI testing flow](Images/ui-testing.gif)
+
+## BDD Run (VHS)
+
+![BDD run recording](docs/assets/bdd.gif)
+
+## GitHub Pages Latest Snapshot
+
+<p align="center">
+  <img alt="Latest GitHub Pages screenshot" src="Images/github-pages-latest.png" width="600">
+</p>
 
 ### Features
 
@@ -107,3 +128,9 @@ By contributing to this project, you agree to license your code under the GPL-3.
 ## Disclaimer
 
 This project is maintained here, on GitHub. Releases are distributed here, on GitHub. We do not currently have a project website outside of this repository. Please make sure to avoid any sites that host our software as they are often malicious and are there to mislead to user.
+
+## GitHub Pages Preview
+
+| <img alt="GitHub Pages preview 1" src="Images/github-pages-1.png"> | <img alt="GitHub Pages preview 2" src="Images/github-pages-2.png"> |
+|:-:|:-:|
+| <img alt="GitHub Pages preview 3" src="Images/github-pages-3.png"> | <img alt="GitHub Pages preview 4" src="Images/github-pages-4.png"> |
