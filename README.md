@@ -7,8 +7,11 @@
 [![Discord](https://img.shields.io/discord/1265361879992242196?style=flat&label=discord)](https://discord.gg/TYnUDJkG66)
 [![Create New Release](https://github.com/realagiorganization/Feather/actions/workflows/release.yml/badge.svg)](https://github.com/realagiorganization/Feather/actions/workflows/release.yml)
 [![Update Repository](https://github.com/realagiorganization/Feather/actions/workflows/update_repo.yml/badge.svg)](https://github.com/realagiorganization/Feather/actions/workflows/update_repo.yml)
+[![CI Build & Tests](https://github.com/realagiorganization/Feather/actions/workflows/ci.yml/badge.svg)](https://github.com/realagiorganization/Feather/actions/workflows/ci.yml)
 [![TestFlight Release](https://github.com/realagiorganization/Feather/actions/workflows/testflight.yml/badge.svg)](https://github.com/realagiorganization/Feather/actions/workflows/testflight.yml)
+[![Validate TestFlight](https://github.com/realagiorganization/Feather/actions/workflows/testflight-validate.yml/badge.svg)](https://github.com/realagiorganization/Feather/actions/workflows/testflight-validate.yml)
 [![BDD Suite](https://github.com/realagiorganization/Feather/actions/workflows/bdd.yml/badge.svg)](https://github.com/realagiorganization/Feather/actions/workflows/bdd.yml)
+[![Pages Screenshot](https://github.com/realagiorganization/Feather/actions/workflows/pages-screenshot.yml/badge.svg)](https://github.com/realagiorganization/Feather/actions/workflows/pages-screenshot.yml)
 
 This app allows you to install and manage applications contained in a single app, using certificate pairs and various installation techniques to allow apps to install to your device. This is an entirely stock application and uses built-in features to be able to do this!
 
@@ -23,6 +26,12 @@ This app allows you to install and manage applications contained in a single app
 ## BDD Run (VHS)
 
 ![BDD run recording](docs/assets/bdd.gif)
+
+## GitHub Pages Latest Snapshot
+
+<p align="center">
+  <img alt="Latest GitHub Pages screenshot" src="Images/github-pages-latest.png" width="600">
+</p>
 
 ### Features
 

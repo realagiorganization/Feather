@@ -1,0 +1,38 @@
+name: CI Build & Tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  build-and-test:
+    runs-on: macos-15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: true
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.2"
+          bundler-cache: true
+
+      - name: Install bundler dependencies
+        run: bundle install
+
+      - name: Run BDD suite
+        run: python3 scripts/run_bdd.py
+
+      - name: Build (CI)
+        run: bundle exec fastlane ci_build
+
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: feather-ipa
+          path: build/Feather.ipa
+          if-no-files-found: error
